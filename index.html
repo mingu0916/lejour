@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>르주르</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="lib/jquery-3.7.1.min.js"></script>
+    <script>
+        $(function () {
+            $('.nav .gnb > li').mouseenter(function () {
+                $(this).find('.depth02_wrap').stop().slideDown();
+            });
+
+            $('.depth02_wrap').mouseleave(function () {
+                $(this).slideUp();
+            });
+        });
+
+
+
+    </script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="inner">
+            <h1 class="logo">
+                <a href="#"><img src="img/logo.png" alt="Le Jour"></a>
+            </h1><!-- .logo end -->
+
+            <nav class="nav">
+                <ul class="gnb">
+                    <li>
+                        <a href="#" class="depth01">BRAND STORY</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="depth01">PRODUCT</a>
+                        <div class="depth02_wrap">
+                            <div class="inner">
+                                <ul class="depth02">
+                                    <li>
+                                        <a href="#">Le Jour SET</a>
+                                        <ul class="depth03">
+                                            <li><a href="#">세탁세제 & 섬유유연제</a></li>
+                                            <li><a href="#">주방용품</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Le Jour PRODUCT</a>
+                                        <ul class="depth03">
+                                            <li><a href="#">세탁세제 & 섬유유연제</a></li>
+                                            <li><a href="#">주방/탈취 용품</a></li>
+                                            <li><a href="#">욕실용품</a></li>
+                                            <li><a href="#">세탁보조제</a></li>
+                                            <li><a href="#">기프트 액세서리</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Le Jour COSMETICS</a>
+                                        <ul class="depth03">
+                                            <li><a href="#">로션/크림</a></li>
+                                        </ul>
+                                    </li>
+                                </ul><!-- .depth02 end -->
+                                <div class="depth02-image">
+                                    <img src="img/header-nav-product.jpg" alt="르브르 메뉴 제품 이미지">
+                                </div><!-- .depth02-image end -->
+                            </div>
+
+                        </div><!-- .depth02-inner  end -->
+                    </li>
+
+                    <li><a href="#" class="depth01">CONTENTS</a></li>
+                    <li><a href="#" class="depth01">REVIEW</a></li>
+                    <li><a href="#" class="depth01">Q&A</a></li>
+                    <li><a href="#" class="depth01">NOTICE</a></li>
+                    <li><a href="#" class="depth01">EVENT</a></li>
+                    <li><a href="#" class="depth01">MEMBERSHIP</a></li>
+                </ul><!-- .gnb -->
+            </nav><!-- .nav nav-pc end -->
+
+            <div class="util">
+                <div class="lang-btn">
+                    <div>LANGUAGES</div>
+                    <ul>
+                        <li><a href="#">Korean</a></li>
+                        <li><a href="#">English</a></li>
+                    </ul>
+                </div><!-- lang-btn end -->
+
+                <ul class="user_menu">
+                    <li><a href="#">LOGIN</a></li>
+                    <li><a href="#">JOIN</a></li>
+                    <li><a href="#">CART<img src="img/icon-cart.png" alt="장바구니"></a></li>
+
+                    <li class="search">
+                    <li><a href="#"><img src="img/icon-search.png" alt="검색하기"></a></li>
+                    <div class="search_box">
+                        <div class="search_box_in">
+                            <input type="text" name="" id="" placeholder="SEARCH">
+                            <img src="img/icon-searchbox.png" alt="검색">
+                        </div>
+                    </div>
+                    </li>
+
+                </ul><!-- user_menu 둥 -->
+            </div><!-- .util end -->
+
+        </div>
+    </header><!-- .header end -->
+
+    <main>
+        <section class="main_visual">
+            <div class="swiper mainVisual">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/visual-01.jpg" alt="르주르 제품 이미지 1"></div>
+                    <div class="swiper-slide"><img src="img/visual-02.jpg" alt="르주르 제품 이미지 2"></div>
+                </div>
+            </div>
+        </section><!-- main_visual end -->
+    </main>
+
+    <div class="menual">
+        <div class="menual_g">
+            <a href="#">
+                <h1>JOIN US</h1>
+                <p>회원가입 시 적립금 2,000원을 드려요.</p>
+            </a>
+        </div>
+
+        <div class="menual_g">
+            <a href="#">
+                <h1>REVIEW</h1>
+                <p>리뷰를 남겨주시면 적립금을 드려요.</p>
+            </a>
+        </div>
+
+        <div class="menual_g">
+            <a href="#">
+                <h1>CONTENTS</h1>
+                <p>다양한 콘텐츠를 통해서 Le Jour의 따뜻함을 느껴보세요.</p>
+            </a>
+        </div>
+    </div>
+
+    <div class="chapter2">
+        <a href="#">
+            <h1>Le Jour's selection</h1>
+        </a>
+
+        <div class="chapter2_menu">
+            <div class="menu2">
+                <a href="#">
+                    <p>세트</p>
+                </a>
+            </div>
+            <div class="menu2">
+                <a href="#">
+                    <p>세제</p>
+                </a>
+            </div>
+            <div class="menu2">
+                <a href="#">
+                    <p>섬유유연제</p>
+                </a>
+            </div>
+            <div class="menu2">
+                <a href="#">
+                    <p>주방/탈취 용품</p>
+                </a>
+            </div>
+            <div class="menu2">
+                <a href="#">
+                    <p>욕실용품</p>
+                </a>
+            </div>
+            <div class="menu2">
+                <a href="#">
+                    <p>세탁보조제</p>
+                </a>
+            </div>
+            <div class="menu2">
+                <a href="#">
+                    <p>로션/크림</p>
+                </a>
+            </div>
+            <div class="menu2">
+                <a href="#">
+                    <p>기프트 액세서리</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="chapter2-1_g">
+        <div class="chapter2-1">
+
+            <div class="ch2-1">
+                <img src="img/르주르패밀리세트.jpg" alt="르주르 패밀리 세트">
+
+                <div class="text">
+                    <ul class="bs">
+                        <li>BEST</li>
+                        <li>SALE</li>
+                    </ul>
+                    <ul class="pr">
+                        <li>Le Jour Family Set</li>
+                        <li>르주르 패밀리 세트</li>
+                        <li>91,800원</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="ch2-1">
+                <img src="img/르주르베이비세트.jpg" alt="르주르 베이비 세트">
+
+                <div class="text">
+                    <ul class="bs">
+                        <li>BEST</li>
+                        <li>SALE</li>
+                    </ul>
+                    <ul class="pr">
+                        <li>Le Jour Baby Set</li>
+                        <li>르주르 베이비 세트</li>
+                        <li>49,000원</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="ch2-1">
+                <img src="img/르주르싱글족세트.jpg" alt="르주르 싱글족 세트">
+
+                <div class="text">
+                    <ul class="bs">
+                        <li>BEST</li>
+                        <li>SALE</li>
+                    </ul>
+                    <ul class="pr">
+                        <li>Le Jour Single Set</li>
+                        <li>르주르 싱글족 세트</li>
+                        <li>45,000원</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="ch2-1">
+                <img src="img/르주르키친세트.jpg" alt="르주르 키친 세트">
+
+                <div class="text">
+                    <ul class="bs">
+                        <li>BEST</li>
+                        <li>SALE</li>
+                    </ul>
+                    <ul class="pr">
+                        <li>Le Jour Kitchen Set</li>
+                        <li>르주르 키친 세트</li>
+                        <li>30,000원</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="ch2-1">
+                <img src="img/르주르싱글족세트(500ml).jpg" alt="르주르 싱글족 세트(500ml)">
+
+                <div class="text">
+                    <ul class="bs">
+                        <li>BEST</li>
+                        <li>SALE</li>
+                    </ul>
+                    <ul class="pr">
+                        <li>Le Jour Single Set(500ml)</li>
+                        <li>르주르 싱글족 세트(500ml)</li>
+                        <li>33,500원</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="more_view">
+        <a href="#">
+            <p>MORE VIEW</p>
+        </a>
+    </div>
+
+
+
+    <div class="chapter3">
+        <h1>Event</h1>
+
+        <div class="chapter3_image">
+            <div class="image_3">
+                <img src="img/3_image.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="chapter5">
+        <h1>#Instagram</h1>
+
+        <div class="image5">
+            <div class="img5-1">
+                <img src="img/인스타1.png" alt="인스타홍보사진-1">
+            </div>
+            <div class="img5-1">
+                <img src="img/인스타2.jpg" alt="인스타홍보사진-2">
+            </div>
+            <div class="img5-1">
+                <img src="img/인스타3.jpg" alt="인스타홍보사진-3">
+            </div>
+            <div class="img5-1">
+                <img src="img/인스타4.jpg" alt="인스타홍보사진-4">
+            </div>
+            <div class="img5-1">
+                <img src="img/인스타5.jpg" alt="인스타홍보사진-5">
+            </div>
+            <div class="img5-1">
+                <img src="img/인스타6.jpg" alt="인스타홍보사진-6">
+            </div>
+        </div>
+    </div>
+
+    <div class="chapter6">
+        <div class="chapter6_gggg">
+            <div class="chapter6_text">
+                <h6>NOTICE</h6>
+                <div class="chapter6-1">
+                    <a href="#">
+                        <p>[NOTICE]❤택배비 인상 안내</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="chapter6_all_g">
+                <div class="chapter6_all">
+                    <div class="chapter6_g">
+                        <div class="chapter6-2">
+                            <h1>고객센터</h1>
+                            <h2>1522-8625</h2>
+                            <p>운영시간 AM 10:00 ~ PM 06:00 (주말 및 공휴일 휴무)</p>
+                            <p>점심시간 AM 12:00 ~ PM 01:00</p>
+                        </div>
+                        <div class="chapter6-2">
+                            <h1>계좌안내</h1>
+                            <h2>국민 670701-04-220781</h2>
+                            <p>예금주 르주르(주)</p>
+                            <p>Q&A</p>
+                            <p>FAQ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="chapter6-img">
+            <img src="img/마지막사진.png" alt="">
+        </div>
+    </div>
+
+
+    <div class="last_g">
+        <div class="last_gg">
+            <div class="chapter7">
+                <div class="chapter7-1">
+                    <div class="logo">
+                        <img src="img/logo.png" alt="">
+                    </div>
+                    <p>Copyright All rights reserved by Le Jour</p>
+                </div>
+
+                <div class="chapter7-1">
+                    <h1>CUSTOMER CENTER</h1>
+                    <h2>반품주소:광주광역시 광산구 수완로 73번길 17 4층(수완동, 리코빌딩)</h2>
+                    <h2>고객센터:1522-8625</h2>
+                    <h2>팩스번호:0504-035-3865</h2>
+                    <h2>운영시간:AM 10:00~PM 06:00(주말 및 공휴일 휴무)</h2>
+                    <h2>점심시간:PM 12:00~PM 01:00</h2>
+                    <h2>BANKINFO:국민은행 670701-04-220781</h2>
+                    <h2>예금주:르주르(주)</h2>
+                </div>
+
+                <div class="chapter7-1">
+                    <h1>LINKS</h1>
+                    <h2>이용약관</h2>
+                    <h2>고객센터:1522-8625</h2>
+                    <h2>이용안내</h2>
+                </div>
+
+                <div class="chapter7-1">
+                    <h1>CS CENTER</h1>
+                    <h2>공지사항</h2>
+                    <h2>FAQ</h2>
+                    <h2>Q&A</h2>
+                </div>
+
+                <div class="chapter7-1">
+                    <h1>ACCOUNT</h1>
+                    <h2>로그인</h2>
+                    <h2>회원가입</h2>
+                    <h2>아이디/비밀번호 찾기</h2>
+                    <h2>멤버쉽</h2>
+                </div>
+
+                <div class="chapter7-1">
+                    <h1>OUR STORY</h1>
+                    <h2>브랜드스토리</h2>
+                    <h2>콘텐츠</h2>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="chapter8_gg">
+            <div class="chapter8_g">
+                <div class="chapter8">
+                    <p>르주르주식회사</p>
+                    <p>대표자:김건우</p>
+                </div>
+
+                <div class="chapter8">
+                    <p>개인정보취급관리자:김종석</p>
+                    <p>이메일:lejour90@naver.com</p>
+                </div>
+
+                <div class="chapter8">
+                    <p>주소:광주광역시 광산구 수완로73번길 17 3층 301호(수완동, 리코빌딩)</p>
+                    <p>사업자등록번호:412-87-00709 사업자번호조회</p>
+                    <p>통신판매업신고번호:제2017-광주광산-0506호</p>
+                </div>
+            </div>
+
+            <div class="chapter8_icon">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+        </div>
+
+        <div class="last">
+            <img src="img/inipay_74x74_color.png" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
